@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace master_proyek
     public partial class Form1 : Form
     {
         int detik = 0;
+        OracleConnection conn = new OracleConnection();
 
         public Form1()
         {
@@ -23,7 +25,14 @@ namespace master_proyek
         {
             this.FormBorderStyle = FormBorderStyle.None;
             timer1.Enabled = true;
-            
+            try
+            {
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
+                conn.Open();
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
 
         //button login
@@ -31,13 +40,12 @@ namespace master_proyek
         {
             string username = bunifuMaterialTextbox1.Text;
             string password = bunifuMaterialTextbox2.Text;
-
             MessageBox.Show(password);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (detik > 8)
+            if (detik > 1)
             {
                 pictureBox2.Visible = false;               
                 panel2.Visible = true;
