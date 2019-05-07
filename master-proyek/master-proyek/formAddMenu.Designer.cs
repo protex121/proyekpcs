@@ -166,6 +166,7 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuMaterialTextbox1
             // 
@@ -264,6 +265,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "formAddMenu";
             this.Text = "formAddMenu";
+            this.Load += new System.EventHandler(this.formAddMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

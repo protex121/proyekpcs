@@ -200,6 +200,7 @@
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(661, 428);
             this.panelcontent.TabIndex = 4;
+            this.panelcontent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcontent_Paint);
             // 
             // pictureBox1
             // 

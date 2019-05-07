@@ -52,7 +52,9 @@ namespace master_proyek
             else
             {
                 FormTennant ft = new FormTennant();
-                ft.username = username;
+
+                FormTennant.id_tennant = password;
+                FormTennant.username = username;
                 this.Hide();
                 ft.ShowDialog();
                 this.Close();
@@ -67,6 +69,11 @@ namespace master_proyek
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }

@@ -12,7 +12,8 @@ namespace master_proyek
 {
     public partial class FormTennant : Form
     {
-        public string username;
+        public static string username;
+        public static string id_tennant;
 
         public FormTennant()
         {
@@ -71,6 +72,11 @@ namespace master_proyek
             //  button2.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form3"] == null)
             //  button3.BackColor = Color.FromArgb(4, 41, 68);
+        }
+
+        private void panelcontent_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
