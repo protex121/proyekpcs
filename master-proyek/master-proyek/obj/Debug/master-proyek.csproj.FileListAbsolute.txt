@@ -9,3 +9,5 @@ D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources

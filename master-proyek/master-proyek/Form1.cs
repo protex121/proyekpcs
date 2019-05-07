@@ -23,8 +23,10 @@ namespace master_proyek
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             this.FormBorderStyle = FormBorderStyle.None;
             timer1.Enabled = true;
+            
             try
             {
                 conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
@@ -39,26 +41,13 @@ namespace master_proyek
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             string username = bunifuMaterialTextbox1.Text;
-            string password = bunifuMaterialTextbox2.Text;
-            MessageBox.Show(password);
+            string password = bunifuMaterialTextbox2.Text;           
+            formadminfc fc = new formadminfc();
+            this.Hide();
+            fc.ShowDialog();
+            this.Close();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (detik > 1)
-            {
-                pictureBox2.Visible = false;               
-                panel2.Visible = true;
-                panel1.Visible = true;
-                this.Size = new Size(781, 541);
-                this.Location = new Point((Screen.PrimaryScreen.Bounds.Size.Width / 2) - (this.Size.Width / 2), (Screen.PrimaryScreen.Bounds.Size.Height / 2) - (this.Size.Height / 2));
-            }
-            else
-            {
-                detik++;
-            }
-        }
-
+        
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
         {
             bunifuMaterialTextbox2.isPassword = true;

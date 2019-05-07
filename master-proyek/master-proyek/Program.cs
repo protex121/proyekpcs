@@ -18,5 +18,6 @@ namespace master_proyek
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
     }
 }
