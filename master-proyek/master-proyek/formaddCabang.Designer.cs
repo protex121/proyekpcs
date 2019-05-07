@@ -117,6 +117,7 @@
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox1.TabIndex = 9;
+            this.bunifuMaterialTextbox1.Text = "X";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuFlatButton1
@@ -265,6 +266,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "formaddCabang";
             this.Text = "formaddCabang";
+            this.Load += new System.EventHandler(this.formaddCabang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
