@@ -1,6 +1,6 @@
 ﻿namespace master_proyek
 {
-    partial class formadminfc
+    partial class FormTennant
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formadminfc));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTennant));
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelbar = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,6 +50,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // panelbar
             // 
             this.panelbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
@@ -61,7 +66,7 @@
             this.panelbar.Margin = new System.Windows.Forms.Padding(2);
             this.panelbar.Name = "panelbar";
             this.panelbar.Size = new System.Drawing.Size(849, 32);
-            this.panelbar.TabIndex = 1;
+            this.panelbar.TabIndex = 2;
             // 
             // bunifuCustomLabel2
             // 
@@ -70,9 +75,9 @@
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(11, 7);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(120, 17);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(77, 17);
             this.bunifuCustomLabel2.TabIndex = 4;
-            this.bunifuCustomLabel2.Text = "WELCOME ADMIN,";
+            this.bunifuCustomLabel2.Text = "WELCOME ,";
             // 
             // btnMinimize
             // 
@@ -102,11 +107,6 @@
             this.btnCancel.TabStop = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
@@ -119,7 +119,7 @@
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(188, 428);
-            this.panelMenu.TabIndex = 2;
+            this.panelMenu.TabIndex = 3;
             // 
             // bunifuCustomLabel1
             // 
@@ -147,7 +147,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 40);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
+            this.button3.Text = "PENJUALAN";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -166,7 +166,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 40);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "MANAGE MENU";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -185,7 +185,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "ADD CABANG";
+            this.button1.Text = "ADD MENU";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -199,8 +199,7 @@
             this.panelcontent.Margin = new System.Windows.Forms.Padding(2);
             this.panelcontent.Name = "panelcontent";
             this.panelcontent.Size = new System.Drawing.Size(661, 428);
-            this.panelcontent.TabIndex = 3;
-            this.panelcontent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelcontent_Paint);
+            this.panelcontent.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -213,7 +212,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // formadminfc
+            // FormTennant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,10 +221,9 @@
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "formadminfc";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "formadminfc";
-            this.Load += new System.EventHandler(this.formadminfc_Load);
+            this.Name = "FormTennant";
+            this.Text = "FormTennant";
+            this.Load += new System.EventHandler(this.FormTennant_Load);
             this.panelbar.ResumeLayout(false);
             this.panelbar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
@@ -240,17 +238,17 @@
 
         #endregion
 
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panelbar;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnCancel;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panelMenu;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelcontent;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
     }
 }
