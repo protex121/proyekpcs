@@ -71,6 +71,12 @@
     <Compile Include="formadminfc.Designer.cs">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </Compile>
+    <Compile Include="formKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKasir.Designer.cs">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formadminfc.resx">
       <DependentUpon>formadminfc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formKasir.resx">
+      <DependentUpon>formKasir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

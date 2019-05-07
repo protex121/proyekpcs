@@ -11,3 +11,17 @@ D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
