@@ -25,7 +25,7 @@ namespace master_proyek
         {
             bunifuMaterialTextbox1.Text = "";
             bunifuMaterialTextbox2.Text = "";
-            bunifuMaterialTextbox3.Text = "";
+            numericUpDown1.Value = 1000;
             bunifuMaterialTextbox4.Text = "";
         }
 
@@ -37,6 +37,7 @@ namespace master_proyek
             string[] menu = nama_menu.Split(' ');
             string temp_id = "";
             string desc_menu = bunifuMaterialTextbox4.Text;
+            int harga = Convert.ToInt32(numericUpDown1.Value);
 
             if (menu.Length > 1)
             {
@@ -72,8 +73,11 @@ namespace master_proyek
 
             id_cabang = dt.Rows[0].ItemArray[0].ToString();
 
-            OracleCommand tcmd = new OracleCommand("INSERT INTO MENU VALUES ("+temp_id+",'"+nama_menu+"','"+desc_menu+"')", conn);
+            OracleCommand tcmd = new OracleCommand("INSERT INTO MENU VALUES ('"+temp_id+"','"+nama_menu+"','"+desc_menu+"')", conn);
             tcmd.ExecuteNonQuery();
+
+            OracleCommand tmp_cmd = new OracleCommand("INSERT INTO MENU_TENNANT VALUES ('"+temp_id+"',''"+id+"',"+harga+")", conn);
+            tmp_cmd.ExecuteNonQuery();
         }
 
         private void formAddMenu_Load(object sender, EventArgs e)

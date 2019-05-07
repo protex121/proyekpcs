@@ -77,6 +77,12 @@
     <Compile Include="formadminfc.Designer.cs">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </Compile>
+    <Compile Include="formManageMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManageMenu.Designer.cs">
+      <DependentUpon>formManageMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTennant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formadminfc.resx">
       <DependentUpon>formadminfc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManageMenu.resx">
+      <DependentUpon>formManageMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>

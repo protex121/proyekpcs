@@ -39,6 +39,8 @@ namespace master_proyek
         {
             changeform<formAddMenu>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void changeform<formku>() where formku : Form, new()
@@ -77,6 +79,14 @@ namespace master_proyek
         private void panelcontent_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            changeform<formManageMenu>();
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(12, 61, 92);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
         }
     }
 }

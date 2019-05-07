@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -39,6 +38,8 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuMaterialTextbox4
@@ -59,25 +60,6 @@
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox4.TabIndex = 28;
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox3
-            // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.Lavender;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.LightSteelBlue;
-            this.bunifuMaterialTextbox3.LineThickness = 4;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(268, 189);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(350, 54);
-            this.bunifuMaterialTextbox3.TabIndex = 27;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox2
             // 
@@ -246,14 +228,42 @@
             this.bunifuCustomLabel1.TabIndex = 18;
             this.bunifuCustomLabel1.Text = "ADD MENU";
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(136)))), ((int)(((byte)(163)))));
+            this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.ForeColor = System.Drawing.SystemColors.Window;
+            this.numericUpDown1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Location = new System.Drawing.Point(267, 203);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            1874919423,
+            2328306,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(350, 43);
+            this.numericUpDown1.TabIndex = 29;
+            this.numericUpDown1.ThousandsSeparator = true;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            // 
             // formAddMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(136)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(645, 389);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.bunifuMaterialTextbox4);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
             this.Controls.Add(this.bunifuMaterialTextbox2);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.bunifuFlatButton1);
@@ -266,6 +276,7 @@
             this.Name = "formAddMenu";
             this.Text = "formAddMenu";
             this.Load += new System.EventHandler(this.formAddMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,7 +285,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
@@ -284,5 +294,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

@@ -26,3 +26,4 @@ F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
