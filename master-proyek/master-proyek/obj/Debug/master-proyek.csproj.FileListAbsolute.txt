@@ -30,3 +30,4 @@ D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojResolveAssemblyReference.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources

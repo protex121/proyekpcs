@@ -32,10 +32,20 @@ namespace master_proyek
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //add cabang
         private void button1_Click(object sender, EventArgs e)
         {
             changeform<formaddCabang>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        //lihat cabang
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(1050, 520);
+            this.CenterToScreen();
+            changeform<formlihatcabang>();
+            button2.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void changeform<formku>() where formku : Form, new()
@@ -76,5 +86,8 @@ namespace master_proyek
         {
 
         }
+
+        
+
     }
 }
