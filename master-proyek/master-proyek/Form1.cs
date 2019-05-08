@@ -29,7 +29,7 @@ namespace master_proyek
             
             try
             {
-                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
                 conn.Open();
             }
             catch (Exception ex) {
@@ -52,7 +52,6 @@ namespace master_proyek
             else
             {
                 FormTennant ft = new FormTennant();
-
                 FormTennant.id_tennant = password;
                 FormTennant.username = username;
                 this.Hide();

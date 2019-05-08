@@ -224,6 +224,7 @@
             this.Controls.Add(this.panelbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormTennant";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTennant";
             this.Load += new System.EventHandler(this.FormTennant_Load);
             this.panelbar.ResumeLayout(false);
