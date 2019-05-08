@@ -74,7 +74,9 @@ namespace master_proyek
 
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
-            //if (Application.OpenForms["Form1"] == null)
+            //if (Application.OpenForms["formaddcabang"] == null) {
+                //button1.BackColor = Color.FromArgb(4, 41, 68);
+            //}
                 //button1.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form2"] == null)
               //  button2.BackColor = Color.FromArgb(4, 41, 68);
