@@ -91,5 +91,6 @@ CREATE TABLE PROMO(
 	JML_PROMO NUMBER (6)
 );
 
+commit;
 
 

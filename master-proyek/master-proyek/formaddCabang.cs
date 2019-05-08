@@ -32,6 +32,54 @@ namespace master_proyek
             bunifuMaterialTextbox4.Text = "";
         }
 
+        private void formaddCabang_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox4_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

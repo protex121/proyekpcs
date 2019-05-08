@@ -10,23 +10,26 @@ using System.Windows.Forms;
 
 namespace master_proyek
 {
-    public partial class formadminfc : Form
+    public partial class FormTennant : Form
     {
-        public formadminfc()
+        public static string username;
+        public static string id_tennant;
+
+        public FormTennant()
         {
             InitializeComponent();
         }
 
-        private void formadminfc_Load(object sender, EventArgs e)
+        private void FormTennant_Load(object sender, EventArgs e)
         {
-
+            bunifuCustomLabel2.Text = "WELCOME "+username.ToUpper()+",";
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        
+
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -34,15 +37,17 @@ namespace master_proyek
 
         private void button1_Click(object sender, EventArgs e)
         {
-            changeform<formaddCabang>();
+            changeform<formAddMenu>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void changeform<formku>() where formku : Form, new()
         {
-            
+
             Form content = panelcontent.Controls.OfType<formku>().FirstOrDefault();
-            
+
             if (content == null)
             {
                 content = new formku();
@@ -54,27 +59,34 @@ namespace master_proyek
                 content.Show();
                 content.BringToFront();
                 content.FormClosed += new FormClosedEventHandler(CloseForms);
-            }            
+            }
             else
             {
                 content.BringToFront();
             }
         }
 
-
         private void CloseForms(object sender, FormClosedEventArgs e)
         {
             //if (Application.OpenForms["Form1"] == null)
-                //button1.BackColor = Color.FromArgb(4, 41, 68);
+            //button1.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form2"] == null)
-              //  button2.BackColor = Color.FromArgb(4, 41, 68);
+            //  button2.BackColor = Color.FromArgb(4, 41, 68);
             //if (Application.OpenForms["Form3"] == null)
-              //  button3.BackColor = Color.FromArgb(4, 41, 68);
+            //  button3.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void panelcontent_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            changeform<formManageMenu>();
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(12, 61, 92);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
         }
     }
 }

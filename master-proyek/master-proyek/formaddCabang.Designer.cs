@@ -51,6 +51,7 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(225, 39);
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "ADD CABANG";
+            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // bunifuCustomLabel2
             // 
@@ -63,6 +64,7 @@
             this.bunifuCustomLabel2.TabIndex = 5;
             this.bunifuCustomLabel2.Text = "ID CABANG : ";
             this.bunifuCustomLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
             // 
             // bunifuCustomLabel3
             // 
@@ -75,6 +77,7 @@
             this.bunifuCustomLabel3.TabIndex = 6;
             this.bunifuCustomLabel3.Text = "NAMA CABANG : ";
             this.bunifuCustomLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel3.Click += new System.EventHandler(this.bunifuCustomLabel3_Click);
             // 
             // bunifuCustomLabel4
             // 
@@ -87,6 +90,7 @@
             this.bunifuCustomLabel4.TabIndex = 7;
             this.bunifuCustomLabel4.Text = "ALAMAT CABANG : ";
             this.bunifuCustomLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel4.Click += new System.EventHandler(this.bunifuCustomLabel4_Click);
             // 
             // bunifuCustomLabel5
             // 
@@ -99,6 +103,7 @@
             this.bunifuCustomLabel5.TabIndex = 8;
             this.bunifuCustomLabel5.Text = "NOMOR TELP : \r\n";
             this.bunifuCustomLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuCustomLabel5.Click += new System.EventHandler(this.bunifuCustomLabel5_Click);
             // 
             // bunifuMaterialTextbox1
             // 
@@ -118,6 +123,7 @@
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox1.TabIndex = 9;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
             // bunifuFlatButton1
             // 
@@ -207,6 +213,7 @@
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox2.TabIndex = 15;
             this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox2.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
             // 
             // bunifuMaterialTextbox3
             // 
@@ -226,6 +233,7 @@
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox3.TabIndex = 16;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox3.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
             // 
             // bunifuMaterialTextbox4
             // 
@@ -245,6 +253,7 @@
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(350, 54);
             this.bunifuMaterialTextbox4.TabIndex = 17;
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox4.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
             // 
             // formaddCabang
             // 
@@ -265,6 +274,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Name = "formaddCabang";
             this.Text = "formaddCabang";
+            this.Load += new System.EventHandler(this.formaddCabang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

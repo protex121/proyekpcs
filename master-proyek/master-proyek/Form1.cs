@@ -29,7 +29,7 @@ namespace master_proyek
             
             try
             {
-                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
+                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
                 conn.Open();
             }
             catch (Exception ex) {
@@ -41,11 +41,26 @@ namespace master_proyek
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             string username = bunifuMaterialTextbox1.Text;
-            string password = bunifuMaterialTextbox2.Text;           
-            formadminfc fc = new formadminfc();
-            this.Hide();
-            fc.ShowDialog();
-            this.Close();
+            string password = bunifuMaterialTextbox2.Text;     
+            if(username=="" && password == "")
+            {
+                formadminfc fc = new formadminfc();
+                this.Hide();
+                fc.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                FormTennant ft = new FormTennant();
+
+                FormTennant.id_tennant = password;
+                FormTennant.username = username;
+                this.Hide();
+                ft.ShowDialog();
+                this.Close();
+            }
+
+
         }
         
         private void bunifuMaterialTextbox2_OnValueChanged(object sender, EventArgs e)
@@ -53,5 +68,14 @@ namespace master_proyek
             bunifuMaterialTextbox2.isPassword = true;
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
