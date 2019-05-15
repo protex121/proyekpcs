@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAF0SURBVEhL7ZS9SsNQHMVTxElxcnBMmpubQCAgQcXNwc8HEH2CPIAu+gLiM6gv4OAu1s0n0M3B
+        dnES6eygrefmnjaJTZukugj5waHk3HPuP5eGa9T8Gc2mXLFt+QZ1S0jlWkKIbdbzMU3pIRjxMQbPx1C/
+        gnqW5WyxnkVKuYhAB/qC9mgrGni7Zdv2wklyHGcNJ7/Sg5xbdjPMYLGlA7G62NjmWmksS66qPoa1aSUI
+        Ic9TAwZ6DIJgjpFS8D9U3Q4tDYwDqMfFn7pBpKGTxUwY4u4K4e5rxV9IH78niScWGC1k7JA0alGFVJhW
+        JeohlfjfQ3hTREronak+vs73gQcdMqqBMdVJ0LlQvRx9jtxjMKcaEobhLHoP3HgonOiUkQRs3laL6g6i
+        VRrT9JfQfU0NuYY9eltg8h0Dlxi4WSQhvA3UhhvhdlhH9wN68n1/nnYWlHYQGHeP5QovdsR6DLzIslyX
+        j/lw0D30UlLPOIHPes1vMYxv1nLjBqyHLPAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

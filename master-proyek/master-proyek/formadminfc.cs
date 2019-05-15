@@ -19,7 +19,7 @@ namespace master_proyek
 
         private void formadminfc_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -37,6 +37,11 @@ namespace master_proyek
         {
             changeform<formaddCabang>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
+
+            this.Size = new Size(849,460);
+            this.CenterToScreen();
+
+            button2.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         //lihat cabang
@@ -46,6 +51,8 @@ namespace master_proyek
             this.CenterToScreen();
             changeform<formlihatcabang>();
             button2.BackColor = Color.FromArgb(12, 61, 92);
+
+            button1.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void changeform<formku>() where formku : Form, new()
