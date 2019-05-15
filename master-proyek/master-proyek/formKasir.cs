@@ -38,5 +38,24 @@ namespace master_proyek
             comboBox1.DisplayMember = "NAMA_MENU";
             comboBox1.ValueMember = "ID_MENU";
         }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == " " || textBox1.Text == " " || numericUpDown1.Value == 0)
+            {
+                MessageBox.Show("Fill All the Fields!");
+            }
+          
+        }
     }
 }

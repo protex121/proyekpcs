@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formadminfc));
             this.panelbar = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelcontent = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
@@ -62,6 +62,17 @@
             this.panelbar.Name = "panelbar";
             this.panelbar.Size = new System.Drawing.Size(849, 32);
             this.panelbar.TabIndex = 1;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(11, 7);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(120, 17);
+            this.bunifuCustomLabel2.TabIndex = 4;
+            this.bunifuCustomLabel2.Text = "WELCOME ADMIN,";
             // 
             // btnMinimize
             // 
@@ -109,6 +120,17 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(188, 428);
             this.panelMenu.TabIndex = 2;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(8, 2);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(175, 31);
+            this.bunifuCustomLabel1.TabIndex = 3;
+            this.bunifuCustomLabel1.Text = "DASHBOARD";
             // 
             // button3
             // 
@@ -189,28 +211,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(8, 2);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(175, 31);
-            this.bunifuCustomLabel1.TabIndex = 3;
-            this.bunifuCustomLabel1.Text = "DASHBOARD";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(11, 7);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(120, 17);
-            this.bunifuCustomLabel2.TabIndex = 4;
-            this.bunifuCustomLabel2.Text = "WELCOME ADMIN,";
             // 
             // formadminfc
             // 
