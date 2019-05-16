@@ -25,6 +25,7 @@ namespace master_proyek
         string idcabang="T01";
         string idkasir="PD001";
         string member;
+        DataSet dset= new DataSet();
         private void formKasir_Load(object sender, EventArgs e)
         {
             try
@@ -80,7 +81,7 @@ namespace master_proyek
                 string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
                 OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
                 cmdinsh.ExecuteNonQuery();
-                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count-1; i++)
+                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
                 {
                     string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
                     string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='"+namamenu + "'";
