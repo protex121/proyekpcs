@@ -1,0 +1,33 @@
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojResolveAssemblyReference.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
