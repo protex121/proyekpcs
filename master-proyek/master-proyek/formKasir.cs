@@ -63,7 +63,7 @@ namespace master_proyek
         {
             if (textBox1.Text == "")
             {
-                MessageBox.Show("Insert Jumlah yang Dibayar tidak Valid!");
+                MessageBox.Show("Jumlah yang Dibayar tidak Valid!");
             }
             else {
                 string idt = "SELECT AUTOGEN_ID_TRANS('" + idcabang + "') FROM DUAL";
@@ -81,7 +81,7 @@ namespace master_proyek
                 string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
                 OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
                 cmdinsh.ExecuteNonQuery();
-                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count-1; i++)
+                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
                 {
                     string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
                     string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='"+namamenu + "'";
@@ -106,6 +106,7 @@ namespace master_proyek
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            label6.Text = "0";
             if (comboBox1.Text == " " || comboBox2.Text == " " || comboBox3.Text == " " || numericUpDown1.Value == 0)
             {
                 MessageBox.Show("Fill All the Fields!");
