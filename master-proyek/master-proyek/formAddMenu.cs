@@ -21,6 +21,21 @@ namespace master_proyek
             InitializeComponent();
         }
 
+        private void formAddMenu_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            try
+            {
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             bunifuMaterialTextbox1.Text = "";
@@ -80,19 +95,8 @@ namespace master_proyek
             tmp_cmd.ExecuteNonQuery();
         }
 
-        private void formAddMenu_Load(object sender, EventArgs e)
-        {
-            this.FormBorderStyle = FormBorderStyle.None;
+        
 
-            try
-            {
-                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
-                conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-            }
-        }
+
     }
 }
