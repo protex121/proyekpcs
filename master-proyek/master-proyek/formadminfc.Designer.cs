@@ -78,10 +78,10 @@
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.Location = new System.Drawing.Point(812, 9);
+            this.btnMinimize.Location = new System.Drawing.Point(784, 3);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(12, 13);
+            this.btnMinimize.Size = new System.Drawing.Size(25, 25);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimize.TabIndex = 2;
             this.btnMinimize.TabStop = false;
@@ -92,10 +92,10 @@
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(827, 9);
+            this.btnCancel.Location = new System.Drawing.Point(813, 3);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(12, 13);
+            this.btnCancel.Size = new System.Drawing.Size(25, 25);
             this.btnCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCancel.TabIndex = 0;
             this.btnCancel.TabStop = false;

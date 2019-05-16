@@ -67,7 +67,16 @@ namespace master_proyek
         {
             bunifuMaterialTextbox2.isPassword = true;
         }
-     
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
     }
 }

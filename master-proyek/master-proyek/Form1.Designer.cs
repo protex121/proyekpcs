@@ -41,9 +41,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.oracleConnection1 = new Oracle.DataAccess.Client.OracleConnection();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnCancel = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -75,7 +79,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panel2.Controls.Add(this.btnMinimize);
             this.panel2.Controls.Add(this.bunifuThinButton21);
+            this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.bunifuMaterialTextbox1);
             this.panel2.Controls.Add(this.bunifuMaterialTextbox2);
             this.panel2.Controls.Add(this.label1);
@@ -176,6 +182,34 @@
             // 
             this.timer1.Interval = 1000;
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.Location = new System.Drawing.Point(287, 11);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(25, 25);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.Location = new System.Drawing.Point(316, 11);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(25, 25);
+            this.btnCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabStop = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +225,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,6 +244,8 @@
         private System.Windows.Forms.Panel panel2;
         private Oracle.DataAccess.Client.OracleConnection oracleConnection1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.PictureBox btnCancel;
     }
 }
 
