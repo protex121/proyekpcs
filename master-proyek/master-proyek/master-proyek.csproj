@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -35,16 +35,12 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>C:\Users\ASUS\Desktop\UiDesignDemo\UiDesignDemo\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342">
       <HintPath>D:\app\Bobby\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
     </Reference>
-=======
-    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342" />
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -62,15 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="FoodCourtReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FoodCourtReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-=======
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,10 +88,12 @@
     <Compile Include="formadminfc.Designer.cs">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
+    <Compile Include="formKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKasir.Designer.cs">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </Compile>
     <Compile Include="formlihatcabang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,14 +111,6 @@
     </Compile>
     <Compile Include="FormTennant.Designer.cs">
       <DependentUpon>FormTennant.cs</DependentUpon>
-<<<<<<< HEAD
-=======
-    <Compile Include="formKasir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formKasir.Designer.cs">
-      <DependentUpon>formKasir.cs</DependentUpon>
->>>>>>> origin/Bobby
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,11 +118,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FoodCourtReport.cs</LastGenOutput>
     </EmbeddedResource>
-=======
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,10 +130,9 @@
     <EmbeddedResource Include="formadminfc.resx">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
+    <EmbeddedResource Include="formKasir.resx">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formlihatcabang.resx">
       <DependentUpon>formlihatcabang.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,13 +141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>
-<<<<<<< HEAD
-=======
-    <EmbeddedResource Include="formKasir.resx">
-      <DependentUpon>formKasir.cs</DependentUpon>
->>>>>>> origin/Bobby
-=======
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,11 +164,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-=======
->>>>>>> parent of c74c14c... Merge remote-tracking branch 'origin/Bobby' into sion
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
