@@ -80,7 +80,7 @@ namespace master_proyek
                 string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
                 OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
                 cmdinsh.ExecuteNonQuery();
-                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count-1; i++)
                 {
                     string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
                     string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='"+namamenu + "'";
@@ -88,7 +88,7 @@ namespace master_proyek
                     try
                     {
                         OracleCommand cmdcekid = new OracleCommand(conidm, oc);
-                        string idm = cmdcekid.ExecuteNonQuery().ToString();
+                        string idm = cmdcekid.ExecuteScalar().ToString();
                         string querydtr = "INSERT INTO DTRANS VALUES('" + idtrans + "','" + idm + "','" + bunifuCustomDataGrid1[0, i].Value.ToString() + "'," +
                             "'" + bunifuCustomDataGrid1[2, i].Value.ToString() + "','" + bunifuCustomDataGrid1[3, i].Value.ToString() + "')";
                         OracleCommand cmdinsd = new OracleCommand(querydtr, oc);
