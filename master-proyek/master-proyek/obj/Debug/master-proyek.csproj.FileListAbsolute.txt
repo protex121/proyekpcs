@@ -131,3 +131,6 @@ C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\mas
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\FlashControlV71.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
