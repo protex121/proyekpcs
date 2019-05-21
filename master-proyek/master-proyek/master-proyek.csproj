@@ -134,6 +134,12 @@
     <Compile Include="FormTennant.Designer.cs">
       <DependentUpon>FormTennant.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaporanGajiPegawai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanGajiPegawai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NotaKasir.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -178,6 +184,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanGajiPegawai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanGajiPegawai.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="NotaKasir.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
