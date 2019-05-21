@@ -16,7 +16,7 @@ namespace master_proyek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formLihatKasir());
+            Application.Run(new formKasir());
         }
 
     }
