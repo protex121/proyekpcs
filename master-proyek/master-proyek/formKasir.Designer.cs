@@ -43,10 +43,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Tennant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Deskripsi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -60,6 +56,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.Tennant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Deskripsi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -152,13 +152,14 @@
             // 
             // bunifuCustomDataGrid1
             // 
+            this.bunifuCustomDataGrid1.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -173,7 +174,8 @@
             this.Ammount});
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCustomDataGrid1.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.DarkBlue;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Honeydew;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(271, 75);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
@@ -182,26 +184,6 @@
             this.bunifuCustomDataGrid1.TabIndex = 15;
             this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
             this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
-            // 
-            // Tennant
-            // 
-            this.Tennant.HeaderText = "Tennant";
-            this.Tennant.Name = "Tennant";
-            // 
-            // Deskripsi
-            // 
-            this.Deskripsi.HeaderText = "Menu Desc";
-            this.Deskripsi.Name = "Deskripsi";
-            // 
-            // Qty
-            // 
-            this.Qty.HeaderText = "Qty";
-            this.Qty.Name = "Qty";
-            // 
-            // Ammount
-            // 
-            this.Ammount.HeaderText = "Ammount";
-            this.Ammount.Name = "Ammount";
             // 
             // bunifuFlatButton1
             // 
@@ -375,6 +357,30 @@
             this.label13.TabIndex = 26;
             this.label13.Text = "ID Member";
             // 
+            // Tennant
+            // 
+            this.Tennant.HeaderText = "Tennant";
+            this.Tennant.Name = "Tennant";
+            this.Tennant.Width = 119;
+            // 
+            // Deskripsi
+            // 
+            this.Deskripsi.HeaderText = "Menu Desc";
+            this.Deskripsi.Name = "Deskripsi";
+            this.Deskripsi.Width = 119;
+            // 
+            // Qty
+            // 
+            this.Qty.HeaderText = "Qty";
+            this.Qty.Name = "Qty";
+            this.Qty.Width = 119;
+            // 
+            // Ammount
+            // 
+            this.Ammount.HeaderText = "Amount";
+            this.Ammount.Name = "Ammount";
+            this.Ammount.Width = 119;
+            // 
             // formKasir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -438,11 +444,11 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tennant;
         private System.Windows.Forms.DataGridViewTextBoxColumn Deskripsi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ammount;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }

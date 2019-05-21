@@ -92,6 +92,7 @@ CREATE TABLE PROMO(
 	JML_PROMO NUMBER (6)
 );
 
+INSERT INTO MEMBER VALUES('GUEST','GUEST',to_date('1/1/1990','dd/mm/yyyy'),'000000000000');
 INSERT INTO MEMBER VALUES('GL001','George Lin',to_date('12/3/1998','dd/mm/yyyy'),'081222638187');
 INSERT INTO MEMBER VALUES('IC001','Ian Clarkson',to_date('26/1/1995','dd/mm/yyyy'),'081328491642');
 INSERT INTO MEMBER VALUES('JB001','Jordan Bernard',to_date('01/8/1999','dd/mm/yyyy'),'081482361835');

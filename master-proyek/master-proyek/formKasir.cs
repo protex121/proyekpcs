@@ -25,6 +25,7 @@ namespace master_proyek
         string idcabang="T01";
         string idkasir="PD001";
         string member;
+
         private void formKasir_Load(object sender, EventArgs e)
         {
             bunifuCustomDataGrid1.AllowUserToAddRows = false;
@@ -37,20 +38,25 @@ namespace master_proyek
             {
                 MessageBox.Show("Gagal Karena "+ ex.Message);
             }
+
             String query = "SELECT * FROM TENNANT";
             OracleDataAdapter oda = new OracleDataAdapter(query, oc);
             DataTable dt = new DataTable();
             oda.Fill(dt);
+
             comboBox2.DataSource = dt;
             comboBox2.DisplayMember = "NAMA_TENNANT";
             comboBox2.ValueMember = "ID_TENNANT";
+
             String querypromo = "SELECT * FROM PROMO ORDER BY ID_PROMO";
             OracleDataAdapter oda1 = new OracleDataAdapter(querypromo, oc);
             DataTable dt1 = new DataTable();
-            oda1.Fill(dt1);            
+            oda1.Fill(dt1);
+
             comboBox3.DataSource = dt1;            
             comboBox3.DisplayMember = "TITLE_PROMO";
             comboBox3.ValueMember = "ID_PROMO";
+
             String namakasir = "SELECT NAMA_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
         }
 
@@ -61,66 +67,118 @@ namespace master_proyek
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            bool adamember = false;
+            string idtrans = "";
+            int pembayaran = 0;
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Insert Jumlah yang Dibayar tidak Valid!");
             }
-            else {
+            else
+            {
                 string idt = "SELECT AUTOGEN_ID_TRANS('" + idcabang + "') FROM DUAL";
                 OracleCommand cmd = new OracleCommand(idt, oc);
-                string idtrans = cmd.ExecuteScalar().ToString();
+                idtrans = cmd.ExecuteScalar().ToString();
                 if (textBox2.Text == "")
                 {
-                    member = "GUEST";
+                    adamember = true;
+                    member = "GUEST";                    
                 }
                 else
                 {
-                    member = textBox2.Text;
-                }
-                //MessageBox.Show(bunifuCustomDataGrid1.Columns.Count+"");
-                string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
-                OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
-                cmdinsh.ExecuteNonQuery();
-                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count-1; i++)
-                {
-                    string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
-                    string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='"+namamenu + "'";
-                    //MessageBox.Show(conidm);
-                    try
+                    string cekmember = "SELECT COUNT(*) FROM MEMBER WHERE ID_MEMBER='" + textBox2.Text + "'";
+                    OracleCommand cmdcek = new OracleCommand(cekmember, oc);
+                    int tempcekmember = Convert.ToInt32(cmdcek.ExecuteScalar());
+
+                    if (tempcekmember <= 0)
                     {
-                        OracleCommand cmdcekid = new OracleCommand(conidm, oc);
-                        string idm = cmdcekid.ExecuteScalar().ToString();
-                        string querydtr = "INSERT INTO DTRANS VALUES('" + idtrans + "','" + idm + "','" + bunifuCustomDataGrid1[0, i].Value.ToString() + "'," +
-                            "'" + bunifuCustomDataGrid1[2, i].Value.ToString() + "','" + bunifuCustomDataGrid1[3, i].Value.ToString() + "')";
-                        OracleCommand cmdinsd = new OracleCommand(querydtr, oc);
-                        cmdinsd.ExecuteNonQuery();
+                        adamember = false;
+                        MessageBox.Show("ID Member Tidak Valid!");                        
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show("Gagal Karena " + ex.Message);
+                        adamember = true;
+                        member = textBox2.Text;                        
                     }
                 }
-                label6.Text = (Convert.ToInt32(textBox1.Text) - total).ToString();
-            }            
+                if (adamember == true) {
+                    string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS'),'DD/MM/YYYY HH24:Mi:SS'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
+                    OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
+                    cmdinsh.ExecuteNonQuery();
+                    for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+                    {
+                        string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
+                        string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='" + namamenu + "'";
+                        try
+                        {
+                            OracleCommand cmdcekid = new OracleCommand(conidm, oc);
+                            string idm = cmdcekid.ExecuteScalar().ToString();
+                            string querydtr = "INSERT INTO DTRANS VALUES('" + idtrans + "','" + idm + "','" + bunifuCustomDataGrid1[0, i].Value.ToString() + "','"
+                                + bunifuCustomDataGrid1[2, i].Value.ToString() + "','" + bunifuCustomDataGrid1[3, i].Value.ToString() + "')";
+                            OracleCommand cmdinsd = new OracleCommand(querydtr, oc);
+                            cmdinsd.ExecuteNonQuery();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Gagal Karena " + ex.Message);
+                        }
+                    }
+
+                    pembayaran = Convert.ToInt32(textBox1.Text);
+                    label6.Text = (pembayaran - total).ToString("#,##");
+
+                    subtotal = 0;
+                    label5.Text = subtotal.ToString("#,##");
+
+                    total = 0;
+                    label8.Text = total.ToString("#,##");
+
+                    bunifuCustomDataGrid1.Rows.Clear();
+                    bunifuCustomDataGrid1.Refresh();
+                    MessageBox.Show("Berhasil Dibayar");
+                }
+
+                //Menunjukkan Nota Habis Mbayar
+                FormNota fn = new FormNota(idtrans, pembayaran);
+                fn.Show();
+            }
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == " " || comboBox2.Text == " " || comboBox3.Text == " " || numericUpDown1.Value == 0)
+            if (comboBox2.Text == "" || comboBox1.Text == "" || numericUpDown1.Value == 0)
             {
-                MessageBox.Show("Fill All the Fields!");
+                MessageBox.Show("Isi Semua Inputbox");
             }
             else {
+                label6.Text = "0";
                 String harga = "SELECT HARGA_MENU FROM MENU_TENNANT WHERE ID_MENU='" + comboBox1.SelectedValue + "'";
                 OracleCommand cmd = new OracleCommand(harga, oc);
                 int hargaper = Convert.ToInt32(cmd.ExecuteScalar());
                 int hargafix = hargaper * Convert.ToInt32(numericUpDown1.Value);
-                bunifuCustomDataGrid1.Rows.Add(comboBox2.SelectedValue.ToString(), comboBox1.Text, Convert.ToInt32(numericUpDown1.Value), hargafix);
+                bool cekmenusama = false;
+                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+                {
+                    if (comboBox2.SelectedValue.ToString() == bunifuCustomDataGrid1[0, i].Value.ToString() &&
+                        comboBox1.Text == bunifuCustomDataGrid1[1, i].Value.ToString())
+                    {
+                        cekmenusama = true;
+                        bunifuCustomDataGrid1[2, i].Value = Convert.ToInt32(bunifuCustomDataGrid1[2, i].Value) + Convert.ToInt32(numericUpDown1.Value);
+                        bunifuCustomDataGrid1[3, i].Value = Convert.ToInt32(bunifuCustomDataGrid1[3, i].Value) + hargaper;
+                    }
+                }
+                if (cekmenusama == false)
+                {
+                    bunifuCustomDataGrid1.Rows.Add(comboBox2.SelectedValue.ToString(), comboBox1.Text, Convert.ToInt32(numericUpDown1.Value), hargafix);
+                }
+
                 subtotal += hargafix;
-                label5.Text = subtotal + "";
+                label5.Text = subtotal.ToString("#,##");
+
                 total = subtotal;
-                label8.Text = total + "";
-            }          
+                label8.Text = total.ToString("#,##");
+            }            
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -135,10 +193,10 @@ namespace master_proyek
             OracleDataAdapter oda = new OracleDataAdapter(query, oc);
             DataTable dt = new DataTable();
             oda.Fill(dt);
+
             comboBox1.DataSource = dt;
             comboBox1.DisplayMember = "N";
             comboBox1.ValueMember = "I";
-            MessageBox.Show(query);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -156,16 +214,15 @@ namespace master_proyek
                 subtotal -= Convert.ToInt32(bunifuCustomDataGrid1[3,delcell ].Value);
                 label5.Text = subtotal+"";
                 total = subtotal;
+
                 label8.Text = total+"";
                 bunifuCustomDataGrid1.Rows.RemoveAt(delcell);
-                
             }            
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             delcell = e.RowIndex;
-            MessageBox.Show(delcell+"");
         }
     }
 }
