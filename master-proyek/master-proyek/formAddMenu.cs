@@ -34,6 +34,9 @@ namespace master_proyek
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+
+            
+
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)

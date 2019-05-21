@@ -120,14 +120,14 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnCancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAF0SURBVEhL7ZS9SsNQHMVTxElxcnBMmpubQCAgQcXNwc8HEH2CPIAu+gLiM6gv4OAu1s0n0M3B
-        dnES6eygrefmnjaJTZukugj5waHk3HPuP5eGa9T8Gc2mXLFt+QZ1S0jlWkKIbdbzMU3pIRjxMQbPx1C/
-        gnqW5WyxnkVKuYhAB/qC9mgrGni7Zdv2wklyHGcNJ7/Sg5xbdjPMYLGlA7G62NjmWmksS66qPoa1aSUI
-        Ic9TAwZ6DIJgjpFS8D9U3Q4tDYwDqMfFn7pBpKGTxUwY4u4K4e5rxV9IH78niScWGC1k7JA0alGFVJhW
-        JeohlfjfQ3hTREronak+vs73gQcdMqqBMdVJ0LlQvRx9jtxjMKcaEobhLHoP3HgonOiUkQRs3laL6g6i
-        VRrT9JfQfU0NuYY9eltg8h0Dlxi4WSQhvA3UhhvhdlhH9wN68n1/nnYWlHYQGHeP5QovdsR6DLzIslyX
-        j/lw0D30UlLPOIHPes1vMYxv1nLjBqyHLPAAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAXRJREFUSEvt
+        lL1Kw1AcxVPESXFycEyam5tAICBBxc3BzwcQfYI8gC76AuIzqC/g4C7WzSfQzcF2cRLp7KCt5+aeNolN
+        m6S6CPnBoeTcc+4/l4Zr1PwZzaZcsW35BnVLSOVaQoht1vMxTekhGPExBs/HUL+CepblbLGeRUq5iEAH
+        +oL2aCsaeLtl2/bCSXIcZw0nv9KDnFt2M8xgsaUDsbrY2OZaaSxLrqo+hrVpJQghz1MDBnoMgmCOkVLw
+        P1TdDi0NjAOox8WfukGkoZPFTBji7grh7mvFX0gfvyeJJxYYLWTskDRqUYVUmFYl6iGV+N9DeFNESuid
+        qT6+zveBBx0yqoEx1UnQuVC9HH2O3GMwpxoShuEseg/ceCic6JSRBGzeVovqDqJVGtP0l9B9TQ25hj16
+        W2DyHQOXGLhZJCG8DdSGG+F2WEf3A3ryfX+edhaUdhAYd4/lCi92xHoMvMiyXJeP+XDQPfRSUs84gc96
+        zW8xjG/WcuMGrIcs8AAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -12,14 +12,21 @@ namespace master_proyek
 {
     public partial class formadminfc : Form
     {
+
         public formadminfc()
         {
             InitializeComponent();
         }
 
         private void formadminfc_Load(object sender, EventArgs e)
-        {
-            
+        {            
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.AutoPopDelay = 1000;
+            toolTip1.InitialDelay = 1000;
+            toolTip1.ReshowDelay = 500;
+            toolTip1.ShowAlways = true;         
+            toolTip1.SetToolTip(this.btnCancel, "Exit");
+            toolTip1.SetToolTip(this.btnMinimize, "Minimize");
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -42,6 +49,8 @@ namespace master_proyek
             this.CenterToScreen();
 
             button2.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         //lihat cabang
@@ -53,6 +62,36 @@ namespace master_proyek
             button2.BackColor = Color.FromArgb(12, 61, 92);
 
             button1.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
+        }
+
+        //add kasir
+        private void button3_Click(object sender, EventArgs e)
+        {
+            changeform<formAddKasir>();
+            button3.BackColor = Color.FromArgb(12, 61, 92);
+
+            this.Size = new Size(849, 600);
+            this.CenterToScreen();
+
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
+        }
+
+        //lihat kasir
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.FromArgb(12, 61, 92);
+
+            changeform<formLihatKasir>();
+            this.Size = new Size(1080, 500);
+            this.CenterToScreen();
+
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void changeform<formku>() where formku : Form, new()
@@ -97,6 +136,7 @@ namespace master_proyek
         }
 
         
+
 
     }
 }
