@@ -110,6 +110,12 @@
     <Compile Include="formManageMenu.Designer.cs">
       <DependentUpon>formManageMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNota.Designer.cs">
+      <DependentUpon>FormNota.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTennant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formManageMenu.resx">
       <DependentUpon>formManageMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNota.resx">
+      <DependentUpon>FormNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>

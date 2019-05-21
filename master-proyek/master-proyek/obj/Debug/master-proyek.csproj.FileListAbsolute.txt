@@ -141,3 +141,4 @@ C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources

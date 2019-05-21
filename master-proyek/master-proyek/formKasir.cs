@@ -62,6 +62,8 @@ namespace master_proyek
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             bool adamember = false;
+            string idtrans;
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Insert Jumlah yang Dibayar tidak Valid!");
@@ -70,7 +72,7 @@ namespace master_proyek
             {
                 string idt = "SELECT AUTOGEN_ID_TRANS('" + idcabang + "') FROM DUAL";
                 OracleCommand cmd = new OracleCommand(idt, oc);
-                string idtrans = cmd.ExecuteScalar().ToString();
+                idtrans = cmd.ExecuteScalar().ToString();
                 if (textBox2.Text == "")
                 {
                     adamember = true;
@@ -94,7 +96,7 @@ namespace master_proyek
                     }
                 }
                 if (adamember == true) {
-                    string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
+                    string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(SYSDATE,'DD/MM/YYYY HH24:MI:SS'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
                     OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
                     cmdinsh.ExecuteNonQuery();
                     MessageBox.Show(bunifuCustomDataGrid1.Rows.Count + "");
@@ -127,6 +129,10 @@ namespace master_proyek
                     bunifuCustomDataGrid1.Refresh();
                     MessageBox.Show("Berhasil Dibayar");
                 }
+
+                //Menunjukkan Nota Habis Mbayar
+                FormNota fn = new FormNota(idtrans);
+                fn.Show();
             }
         }
 
