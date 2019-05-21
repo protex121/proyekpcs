@@ -35,6 +35,17 @@ namespace master_proyek
                 MessageBox.Show(ex.Message.ToString());
             }
             refresh_data();
+
+            comboBox1.Items.Add("ID");
+            comboBox1.Items.Add("NAMA CABANG");
+            comboBox1.SelectedIndex = 0;
+
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.AutoPopDelay = 1000;
+            toolTip1.InitialDelay = 1000;
+            toolTip1.ReshowDelay = 500;
+            toolTip1.ShowAlways = true;
+            toolTip1.SetToolTip(this.btnCancel, "Refresh");
         }
 
         private void refresh_data() {
@@ -50,11 +61,29 @@ namespace master_proyek
             bunifuCustomDataGrid1.Columns[3].HeaderText = "NOMOR TELP";
             
             bunifuCustomDataGrid1.ColumnHeadersHeight = 100;
-            bunifuCustomDataGrid1.RowHeadersVisible = false;
+            bunifuCustomDataGrid1.RowHeadersVisible = false;           
         }
 
+        //ketik di tempat search
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //masih salah
+            string key = textBox1.Text.ToUpper();
+            string query = "SELECT * FROM CABANG WHERE upper(id_cabang)='"+key+"' OR upper(nama_cabang)='"+key+"'";
+
+            OracleDataAdapter oda = new OracleDataAdapter(query, conn);
+            DataTable dt = new DataTable();
+            oda.Fill(dt);
+            bunifuCustomDataGrid1.DataSource = dt;
+
+            bunifuCustomDataGrid1.Columns[0].HeaderText = "ID CABANG";
+            bunifuCustomDataGrid1.Columns[1].HeaderText = "NAMA CABANG";
+            bunifuCustomDataGrid1.Columns[2].HeaderText = "ALAMAT";
+            bunifuCustomDataGrid1.Columns[3].HeaderText = "NOMOR TELP";
+
+            bunifuCustomDataGrid1.ColumnHeadersHeight = 100;
+            bunifuCustomDataGrid1.RowHeadersVisible = false;
+
 
         }
 
@@ -106,5 +135,7 @@ namespace master_proyek
             }
             
         }
+
+
     }
 }
