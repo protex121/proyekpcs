@@ -14,7 +14,6 @@ D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
-F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojResolveAssemblyReference.cache
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
@@ -27,3 +26,4 @@ F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
 F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
