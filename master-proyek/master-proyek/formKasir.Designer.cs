@@ -43,6 +43,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Tennant = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Deskripsi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -56,10 +60,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.Tennant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Deskripsi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
@@ -184,6 +184,30 @@
             this.bunifuCustomDataGrid1.TabIndex = 15;
             this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
             this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
+            // 
+            // Tennant
+            // 
+            this.Tennant.HeaderText = "Tennant";
+            this.Tennant.Name = "Tennant";
+            this.Tennant.Width = 119;
+            // 
+            // Deskripsi
+            // 
+            this.Deskripsi.HeaderText = "Menu Desc";
+            this.Deskripsi.Name = "Deskripsi";
+            this.Deskripsi.Width = 119;
+            // 
+            // Qty
+            // 
+            this.Qty.HeaderText = "Qty";
+            this.Qty.Name = "Qty";
+            this.Qty.Width = 119;
+            // 
+            // Ammount
+            // 
+            this.Ammount.HeaderText = "Amount";
+            this.Ammount.Name = "Ammount";
+            this.Ammount.Width = 119;
             // 
             // bunifuFlatButton1
             // 
@@ -320,6 +344,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(135, 21);
             this.comboBox3.TabIndex = 22;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -356,30 +381,6 @@
             this.label13.Size = new System.Drawing.Size(59, 13);
             this.label13.TabIndex = 26;
             this.label13.Text = "ID Member";
-            // 
-            // Tennant
-            // 
-            this.Tennant.HeaderText = "Tennant";
-            this.Tennant.Name = "Tennant";
-            this.Tennant.Width = 119;
-            // 
-            // Deskripsi
-            // 
-            this.Deskripsi.HeaderText = "Menu Desc";
-            this.Deskripsi.Name = "Deskripsi";
-            this.Deskripsi.Width = 119;
-            // 
-            // Qty
-            // 
-            this.Qty.HeaderText = "Qty";
-            this.Qty.Name = "Qty";
-            this.Qty.Width = 119;
-            // 
-            // Ammount
-            // 
-            this.Ammount.HeaderText = "Amount";
-            this.Ammount.Name = "Ammount";
-            this.Ammount.Width = 119;
             // 
             // formKasir
             // 
