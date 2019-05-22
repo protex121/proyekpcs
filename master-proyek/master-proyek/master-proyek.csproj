@@ -122,6 +122,12 @@
     <Compile Include="formLihatKasir.Designer.cs">
       <DependentUpon>formLihatKasir.cs</DependentUpon>
     </Compile>
+    <Compile Include="formLihatMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLihatMenu.Designer.cs">
+      <DependentUpon>formLihatMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="formManageMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLihatKasir.resx">
       <DependentUpon>formLihatKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLihatMenu.resx">
+      <DependentUpon>formLihatMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formManageMenu.resx">
       <DependentUpon>formManageMenu.cs</DependentUpon>

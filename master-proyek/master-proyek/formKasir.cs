@@ -31,8 +31,8 @@ namespace master_proyek
             bunifuCustomDataGrid1.AllowUserToAddRows = false;
             try
             {
-                oc = new OracleConnection("user id= zamorano; password= zamorano; data source=zamorano");
-                oc.Open();
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
+                conn.Open();
             }
             catch (Exception ex)
             {

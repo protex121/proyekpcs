@@ -30,7 +30,7 @@ namespace master_proyek
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             try
             {
-                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
                 conn.Open();
             }
             catch (Exception ex)

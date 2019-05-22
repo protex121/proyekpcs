@@ -29,7 +29,7 @@ namespace master_proyek
 
             try
             {
-                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
                 conn.Open();
             }
             catch (Exception ex)
@@ -100,7 +100,7 @@ namespace master_proyek
             tmp_cmd.ExecuteNonQuery();
 
             bunifuFlatButton2_Click(sender, e);
-            string newPath = Application.StartupPath+"\\pp";
+            string newPath = Application.StartupPath+"\\menu";
             string destFile = Path.Combine(newPath, temp_id + ".jpg");
             File.Copy(path, destFile, true);
         }
