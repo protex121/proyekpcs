@@ -35,13 +35,22 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>C:\Users\ASUS\Desktop\UiDesignDemo\UiDesignDemo\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <HintPath>D:\app\Bobby\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FoodCourtReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FoodCourtReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,11 +80,23 @@
     <Compile Include="formaddCabang.Designer.cs">
       <DependentUpon>formaddCabang.cs</DependentUpon>
     </Compile>
+    <Compile Include="formAddKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddKasir.Designer.cs">
+      <DependentUpon>formAddKasir.cs</DependentUpon>
+    </Compile>
     <Compile Include="formAddMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formAddMenu.Designer.cs">
       <DependentUpon>formAddMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddPromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddPromo.Designer.cs">
+      <DependentUpon>formAddPromo.cs</DependentUpon>
     </Compile>
     <Compile Include="formadminfc.cs">
       <SubType>Form</SubType>
@@ -77,11 +104,41 @@
     <Compile Include="formadminfc.Designer.cs">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </Compile>
+    <Compile Include="formKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formKasir.Designer.cs">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formlihatcabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formlihatcabang.Designer.cs">
+      <DependentUpon>formlihatcabang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLihatKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLihatKasir.Designer.cs">
+      <DependentUpon>formLihatKasir.cs</DependentUpon>
+    </Compile>
     <Compile Include="formManageMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formManageMenu.Designer.cs">
       <DependentUpon>formManageMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManagePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManagePromo.Designer.cs">
+      <DependentUpon>formManagePromo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNota.Designer.cs">
+      <DependentUpon>FormNota.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTennant.cs">
       <SubType>Form</SubType>
@@ -89,25 +146,70 @@
     <Compile Include="FormTennant.Designer.cs">
       <DependentUpon>FormTennant.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaporanGajiPegawai.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LaporanGajiPegawai.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NotaKasir.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaKasir.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FoodCourtReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FoodCourtReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formaddCabang.resx">
       <DependentUpon>formaddCabang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formAddKasir.resx">
+      <DependentUpon>formAddKasir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formAddMenu.resx">
       <DependentUpon>formAddMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddPromo.resx">
+      <DependentUpon>formAddPromo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formadminfc.resx">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formKasir.resx">
+      <DependentUpon>formKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formlihatcabang.resx">
+      <DependentUpon>formlihatcabang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLihatKasir.resx">
+      <DependentUpon>formLihatKasir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formManageMenu.resx">
       <DependentUpon>formManageMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formManagePromo.resx">
+      <DependentUpon>formManagePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNota.resx">
+      <DependentUpon>FormNota.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanGajiPegawai.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LaporanGajiPegawai.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaKasir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NotaKasir.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +232,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\99-Restaurant-Square.png" />
+    <Content Include="resources\background.jpg" />
+    <Content Include="resources\bg.jpg" />
+    <Content Include="resources\icon\add.png" />
+    <Content Include="resources\icon\close.png" />
+    <Content Include="resources\icon\iconadd.png" />
+    <Content Include="resources\icon\lihatcabang.png" />
+    <Content Include="resources\icon\minimize.png" />
+    <Content Include="resources\icon\refresh.png" />
+    <Content Include="resources\justlogo.png" />
+    <Content Include="resources\justtext.png" />
+    <Content Include="resources\logowithoutbg.png" />
+    <Content Include="resources\preloader.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

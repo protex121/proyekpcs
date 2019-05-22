@@ -40,6 +40,7 @@ namespace master_proyek
             changeform<formAddMenu>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
             button2.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
             button3.BackColor = Color.FromArgb(4, 41, 68);
         }
 
@@ -86,7 +87,26 @@ namespace master_proyek
             changeform<formManageMenu>();
             button1.BackColor = Color.FromArgb(4, 41, 68);
             button2.BackColor = Color.FromArgb(12, 61, 92);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
             button3.BackColor = Color.FromArgb(4, 41, 68);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            changeform<formAddPromo>();
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(12, 61, 92);
+            button3.BackColor = Color.FromArgb(4, 41, 68);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            changeform<formManagePromo>();
+            button1.BackColor = Color.FromArgb(4, 41, 68);
+            button2.BackColor = Color.FromArgb(4, 41, 68);
+            button4.BackColor = Color.FromArgb(4, 41, 68);
+            button3.BackColor = Color.FromArgb(12, 61, 92);
         }
     }
 }

@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
 
 namespace master_proyek
 {
@@ -15,10 +16,29 @@ namespace master_proyek
     {
         OracleConnection conn = new OracleConnection();
         string id_cabang = "";
+        string path;
 
         public formAddMenu()
         {
             InitializeComponent();
+        }
+
+        private void formAddMenu_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            try
+            {
+                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+
+            
+
         }
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
@@ -78,20 +98,23 @@ namespace master_proyek
 
             OracleCommand tmp_cmd = new OracleCommand("INSERT INTO MENU_TENNANT VALUES ('"+temp_id+"',''"+id+"',"+harga+")", conn);
             tmp_cmd.ExecuteNonQuery();
+
+            bunifuFlatButton2_Click(sender, e);
+            string newPath = Application.StartupPath+"\\pp";
+            string destFile = Path.Combine(newPath, temp_id + ".jpg");
+            File.Copy(path, destFile, true);
         }
 
-        private void formAddMenu_Load(object sender, EventArgs e)
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Title = "Browse Picture Files";
+            openFileDialog1.Filter = "Picture files (*.jpg)|*.jpg|Picture files (*.png)|*.png|All files (*.*)|*.*";
 
-            try
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                conn = new OracleConnection("user id=zamorano;password=zamorano;data source=zamorano");
-                conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
+                bunifuFlatButton3.Text = "  " + Path.GetFileName(openFileDialog1.FileName);
+                path = openFileDialog1.FileName;
             }
         }
     }
