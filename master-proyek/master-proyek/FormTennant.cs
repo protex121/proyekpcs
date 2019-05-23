@@ -40,9 +40,7 @@ namespace master_proyek
             changeform<formAddMenu>();
             button1.BackColor = Color.FromArgb(12, 61, 92);
             button2.BackColor = Color.FromArgb(4, 41, 68);
-            button4.BackColor = Color.FromArgb(4, 41, 68);
             button3.BackColor = Color.FromArgb(4, 41, 68);
-            button5.BackColor = Color.FromArgb(4, 41, 68);
         }
 
         private void changeform<formku>() where formku : Form, new()
@@ -88,44 +86,7 @@ namespace master_proyek
             changeform<formManageMenu>();
             button1.BackColor = Color.FromArgb(4, 41, 68);
             button2.BackColor = Color.FromArgb(12, 61, 92);
-            button4.BackColor = Color.FromArgb(4, 41, 68);
             button3.BackColor = Color.FromArgb(4, 41, 68);
-            button5.BackColor = Color.FromArgb(4, 41, 68);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            changeform<formAddPromo>();
-            button1.BackColor = Color.FromArgb(4, 41, 68);
-            button2.BackColor = Color.FromArgb(4, 41, 68);
-            button4.BackColor = Color.FromArgb(12, 61, 92);
-
-            button5.BackColor = Color.FromArgb(4, 41, 68);
-            button3.BackColor = Color.FromArgb(4, 41, 68);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            changeform<formManagePromo>();
-            button1.BackColor = Color.FromArgb(4, 41, 68);
-            button2.BackColor = Color.FromArgb(4, 41, 68);
-            button4.BackColor = Color.FromArgb(4, 41, 68);
-            button5.BackColor = Color.FromArgb(4, 41, 68);
-            button3.BackColor = Color.FromArgb(12, 61, 92);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Size = new Size(1080, 500);
-            this.CenterToScreen();
-
-            formLihatMenu.temp_id = id_tennant;
-            changeform<formLihatMenu>();
-            button1.BackColor = Color.FromArgb(4, 41, 68);
-            button2.BackColor = Color.FromArgb(4, 41, 68);
-            button4.BackColor = Color.FromArgb(4, 41, 68);
-            button3.BackColor = Color.FromArgb(4, 41, 68);
-            button5.BackColor = Color.FromArgb(12, 61, 92);
         }
     }
 }

@@ -15,10 +15,6 @@ namespace master_proyek
     {
         int detik = 0;
         OracleConnection conn = new OracleConnection();
-        List<string> id_tennant = new List<string>();
-        List<string> pass_tennant = new List<string>();
-        List<string> id_kasir = new List<string>();
-        List<string> pass_kasir = new List<string>();
 
         public Form1()
         {
@@ -35,41 +31,10 @@ namespace master_proyek
             {
                 conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
                 conn.Open();
-
-                load_tennant();
-                load_kasir();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
-            }
-        }
-
-        //load id dan password tennant
-        private void load_tennant()
-        {
-            OracleDataAdapter cmd = new OracleDataAdapter("SELECT ID_TENNANT, NAMA_TENNANT FROM TENNANT", conn);
-            DataTable dt = new DataTable();
-            cmd.Fill(dt);
-
-            for(int i = 0; i < dt.Rows.Count; i++)
-            {
-                id_tennant.Add(dt.Rows[i].ItemArray[1].ToString());
-                pass_tennant.Add(dt.Rows[i].ItemArray[0].ToString());
-            }
-        }
-
-        //load id dan password kasir
-        private void load_kasir()
-        {
-            OracleDataAdapter cmd = new OracleDataAdapter("SELECT ID_PEGAWAI, PASS_PEGAWAI FROM PEGAWAI WHERE JABATAN_PEGAWAI='K2'", conn);
-            DataTable dt = new DataTable();
-            cmd.Fill(dt);
-
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                id_kasir.Add(dt.Rows[i].ItemArray[0].ToString());
-                pass_kasir.Add(dt.Rows[i].ItemArray[1].ToString());
             }
         }
 
@@ -78,47 +43,18 @@ namespace master_proyek
         {
             string username = bunifuMaterialTextbox1.Text;
             string password = bunifuMaterialTextbox2.Text;
-            bool tennant = false;
-            bool kasir = false;
-
-            if (username == "admin" && password == "admin")
+            if (username == "" && password == "")
             {
                 formadminfc fc = new formadminfc();
                 this.Hide();
                 fc.ShowDialog();
                 this.Close();
             }
-
-            for(int i = 0; i < id_tennant.Count; i++)
-            {
-                if(id_tennant[i] == username  && pass_tennant[i] == password)
-                {
-                    tennant = true;
-                    i = id_tennant.Count + 10;
-                }
-            }
-
-            for (int i = 0; i < id_kasir.Count; i++)
-            {
-                if (id_kasir[i] == username && pass_kasir[i] == password)
-                {
-                    kasir = true;
-                    i = id_kasir.Count + 10;
-                }
-            }
-
-            if (tennant == true)
+            else
             {
                 FormTennant ft = new FormTennant();
                 FormTennant.id_tennant = password;
                 FormTennant.username = username;
-                this.Hide();
-                ft.ShowDialog();
-                this.Close();
-            }
-            else if(kasir == true)
-            {
-                formKasir ft = new formKasir();
                 this.Hide();
                 ft.ShowDialog();
                 this.Close();
@@ -138,11 +74,6 @@ namespace master_proyek
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
