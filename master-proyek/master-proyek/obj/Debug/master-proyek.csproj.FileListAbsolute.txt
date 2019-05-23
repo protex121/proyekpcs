@@ -101,7 +101,6 @@ C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\Cry
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\stdole.dll
-C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
 C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
