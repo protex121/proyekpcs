@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
 
 namespace master_proyek
 {
@@ -15,6 +16,7 @@ namespace master_proyek
     {
         OracleConnection conn = new OracleConnection();
         string id_cabang = "";
+        string path;
 
         public formAddMenu()
         {
@@ -96,10 +98,24 @@ namespace master_proyek
 
             OracleCommand tmp_cmd = new OracleCommand("INSERT INTO MENU_TENNANT VALUES ('"+temp_id+"',''"+id+"',"+harga+")", conn);
             tmp_cmd.ExecuteNonQuery();
+
+            bunifuFlatButton2_Click(sender, e);
+            string newPath = Application.StartupPath+"\\menu";
+            string destFile = Path.Combine(newPath, temp_id + ".jpg");
+            File.Copy(path, destFile, true);
         }
-
         
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Title = "Browse Picture Files";
+            openFileDialog1.Filter = "Picture files (*.jpg)|*.jpg|Picture files (*.png)|*.png|All files (*.*)|*.*";
 
-
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                bunifuFlatButton3.Text = "  " + Path.GetFileName(openFileDialog1.FileName);
+                path = openFileDialog1.FileName;
+            }
+        }
     }
 }

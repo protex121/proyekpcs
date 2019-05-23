@@ -65,7 +65,8 @@ namespace master_proyek
             MessageBox.Show("Insert Berhasil!");
 
             bunifuFlatButton2_Click(sender,e);
-            string newPath = @"D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\pp";
+
+            string newPath =Application.StartupPath+"\\pp";
             string destFile = Path.Combine(newPath, id + ".jpg");
             File.Copy(path, destFile, true);
 

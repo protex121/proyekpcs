@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
 
 namespace master_proyek
 {
@@ -18,6 +19,7 @@ namespace master_proyek
         List<string> nama_menu = new List<string>();
         List<string> desc_menu = new List<string>();
         List<int> harga = new List<int>();
+        string path;
 
         public formManageMenu()
         {
@@ -38,7 +40,7 @@ namespace master_proyek
                 MessageBox.Show(ex.Message.ToString());
             }
 
-            load_menu();
+            load_menu();            
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -50,6 +52,11 @@ namespace master_proyek
 
                 OracleCommand tcmd = new OracleCommand("UPDATE MENU_TENNANT SET HARGA_MENU = "+Convert.ToInt32(numericUpDown1.Value)+" WHERE ID_MENU = '"+comboBox1.SelectedItem.ToString()+"'", conn);
                 tcmd.ExecuteNonQuery();
+
+                bunifuFlatButton2_Click(sender, e);
+                string newPath = Application.StartupPath+"\\menu";
+                string destFile = Path.Combine(newPath, comboBox1.SelectedItem.ToString() + ".jpg");
+                File.Copy(path, destFile, true);
             }
             catch(Exception ex)
             {
@@ -110,6 +117,21 @@ namespace master_proyek
             bunifuMaterialTextbox1.Text = nama_menu[comboBox1.SelectedIndex];
             bunifuMaterialTextbox2.Text = desc_menu[comboBox1.SelectedIndex];
             numericUpDown1.Value = harga[comboBox1.SelectedIndex];
+
+            bunifuFlatButton3.Text = comboBox1.SelectedItem.ToString()+".jpg";
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Title = "Browse Picture Files";
+            openFileDialog1.Filter = "Picture files (*.jpg)|*.jpg|Picture files (*.png)|*.png|All files (*.*)|*.*";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                bunifuFlatButton3.Text = "  " + Path.GetFileName(openFileDialog1.FileName);
+                path = openFileDialog1.FileName;
+            }
         }
     }
 }

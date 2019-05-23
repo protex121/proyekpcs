@@ -33,6 +33,9 @@ namespace master_proyek
             {
                 oc = new OracleConnection("user id= proyekpcs; password= proyekpcs; data source=orcl");
                 oc.Open();
+
+                conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
+                conn.Open();
             }
             catch (Exception ex)
             {
@@ -153,7 +156,9 @@ namespace master_proyek
             }
             else {
                 label6.Text = "0";
-                String harga = "SELECT HARGA_MENU FROM MENU_TENNANT WHERE ID_MENU='" + comboBox1.SelectedValue + "'";
+
+                string harga = "SELECT HARGA_MENU FROM MENU_TENNANT WHERE ID_MENU='" + comboBox1.SelectedValue + "'";
+
                 OracleCommand cmd = new OracleCommand(harga, oc);
                 int hargaper = Convert.ToInt32(cmd.ExecuteScalar());
                 int hargafix = hargaper * Convert.ToInt32(numericUpDown1.Value);
@@ -165,7 +170,7 @@ namespace master_proyek
                     {
                         cekmenusama = true;
                         bunifuCustomDataGrid1[2, i].Value = Convert.ToInt32(bunifuCustomDataGrid1[2, i].Value) + Convert.ToInt32(numericUpDown1.Value);
-                        bunifuCustomDataGrid1[3, i].Value = Convert.ToInt32(bunifuCustomDataGrid1[3, i].Value) + hargaper;
+                        bunifuCustomDataGrid1[3, i].Value = Convert.ToInt32(bunifuCustomDataGrid1[3, i].Value) + hargafix;
                     }
                 }
                 if (cekmenusama == false)
@@ -178,6 +183,8 @@ namespace master_proyek
 
                 total = subtotal;
                 label8.Text = total.ToString("#,##");
+
+                cekpromo();
             }            
         }
 
@@ -217,12 +224,40 @@ namespace master_proyek
 
                 label8.Text = total+"";
                 bunifuCustomDataGrid1.Rows.RemoveAt(delcell);
+
+                cekpromo();
             }            
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             delcell = e.RowIndex;
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cekpromo();
+        }
+
+        public void cekpromo() {            
+            if (comboBox3.Text == "NO PROMO")
+            {
+                label5.Text = subtotal + "";
+                total = subtotal;
+                label8.Text = total + "";
+            }
+            else {
+                string potonganpromo = "SELECT JML_PROMO FROM PROMO WHERE ID_PROMO= '" + comboBox3.SelectedValue.ToString() + "'";
+                OracleCommand isipromo = new OracleCommand(potonganpromo, oc);
+                total = 0;                
+                label5.Text = subtotal + " + " + comboBox3.Text;
+                for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+                {                 
+                    total = total+ Convert.ToInt32(bunifuCustomDataGrid1[2, i].Value)*Convert.ToInt32(bunifuCustomDataGrid1[3, i].Value) / Convert.ToInt32(bunifuCustomDataGrid1[2, i].Value);
+                }
+                total = total - (total * Convert.ToInt32(isipromo.ExecuteScalar()) / 100);               
+                label8.Text = total + "";
+            }           
         }
     }
 }

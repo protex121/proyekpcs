@@ -11,20 +11,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace master_proyek
 {
-    public partial class formLihatKasir : Form
+    public partial class formLihatMenu : Form
     {
         OracleConnection conn = new OracleConnection();
-        string path = Application.StartupPath+"\\pp";
+        string path = Application.StartupPath + "\\menu";
+        public static string temp_id = "";
         int row;
 
-        public formLihatKasir()
+        public formLihatMenu()
         {
             InitializeComponent();
         }
 
-        private void formLihatKasir_Load(object sender, EventArgs e)
+        private void formLihatMenu_Load(object sender, EventArgs e)
         {
             bunifuCustomDataGrid1.AllowUserToAddRows = false;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -44,24 +46,23 @@ namespace master_proyek
 
         public void refresh()
         {
-            string query = "SELECT id_pegawai,nama_pegawai,to_char(tgllahir_pegawai,'DD/MM/YYYY'),nohp_pegawai,cabang_pegawai FROM PEGAWAI WHERE JABATAN_PEGAWAI='K2'";
+            string query = " SELECT M.ID_MENU,M.NAMA_MENU, M.DESKRIPSI_MENU, MT.HARGA_MENU FROM MENU M, MENU_TENNANT MT WHERE M.ID_MENU = MT.ID_MENU AND MT.ID_TENNANT = '"+temp_id+"'";
             OracleDataAdapter oda = new OracleDataAdapter(query, conn);
             DataTable dt = new DataTable();
             oda.Fill(dt);
             bunifuCustomDataGrid1.DataSource = dt;
 
-            bunifuCustomDataGrid1.Columns[0].HeaderText = "ID PEGAWAI";
-            bunifuCustomDataGrid1.Columns[1].HeaderText = "NAMA PEGAWAI";
-            bunifuCustomDataGrid1.Columns[2].HeaderText = "TGL LAHIR";
-            bunifuCustomDataGrid1.Columns[3].HeaderText = "NOMOR TELP";
-            bunifuCustomDataGrid1.Columns[4].HeaderText = "CABANG";
-           
+            bunifuCustomDataGrid1.Columns[0].HeaderText = "ID MENU";
+            bunifuCustomDataGrid1.Columns[1].HeaderText = "NAMA MENU";
+            bunifuCustomDataGrid1.Columns[2].HeaderText = "DESKRIPSI MENU";
+            bunifuCustomDataGrid1.Columns[3].HeaderText = "HARGA MENU";
+
         }
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             row = e.RowIndex;
-            
+
             if (row > -1)
             {
                 String id = bunifuCustomDataGrid1[0, row].Value.ToString();
@@ -74,22 +75,6 @@ namespace master_proyek
                     pictureBox1.Image = Image.FromFile(path + "\\null.jpg");
                 }
             }
-            
-
-           
         }
-
-        //btn delete
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            string id = bunifuCustomDataGrid1[0, row].Value.ToString();
-            //File.Delete(@"D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\pp\" + id + ".jpg");
-            string query = "DELETE FROM pegawai WHERE id_pegawai='" + id + "'";
-            OracleCommand cmd = new OracleCommand(query, conn);
-            cmd.ExecuteNonQuery();        
-            refresh();
-            MessageBox.Show("Delete Data Berhasil!");
-        }
-
     }
 }
