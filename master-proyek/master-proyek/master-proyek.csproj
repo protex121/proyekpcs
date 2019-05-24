@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -205,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formManagePromo.resx">
       <DependentUpon>formManagePromo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManageMenu.resx">
+      <DependentUpon>formManageMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNota.resx">
       <DependentUpon>FormNota.cs</DependentUpon>

@@ -19,6 +19,11 @@ namespace master_proyek
         }
 
         OracleConnection oc;
+
+        OracleDataAdapter odan;
+        DataTable dtn;
+        OracleCommandBuilder cmdn;
+
         int subtotal = 0;
         int total = 0;
         int delcell;
@@ -33,6 +38,7 @@ namespace master_proyek
             {
                 conn = new OracleConnection("user id=proyekpcs;password=proyekpcs;data source=orcl");
                 conn.Open();
+
             }
             catch (Exception ex)
             {
@@ -49,6 +55,7 @@ namespace master_proyek
             comboBox2.ValueMember = "ID_TENNANT";
 
             String querypromo = "SELECT * FROM PROMO ORDER BY ID_PROMO";
+
             OracleDataAdapter oda1 = new OracleDataAdapter(querypromo, oc);
             DataTable dt1 = new DataTable();
             oda1.Fill(dt1);
@@ -58,6 +65,19 @@ namespace master_proyek
             comboBox3.ValueMember = "ID_PROMO";
 
             String namakasir = "SELECT NAMA_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
+
+            oda = new OracleDataAdapter(querypromo, oc);
+            dt = new DataTable();
+            oda.Fill(dt);
+
+            comboBox3.DataSource = dt;            
+            comboBox3.DisplayMember = "TITLE_PROMO";
+            comboBox3.ValueMember = "ID_PROMO";
+
+            //lanjutan coding NAMA KASIR
+            String namakasir = "SELECT NAMA_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
+
+
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -71,13 +91,17 @@ namespace master_proyek
             string idtrans = "";
             int pembayaran = 0;
 
+            OracleTransaction ot = oc.BeginTransaction();
+
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Insert Jumlah yang Dibayar tidak Valid!");
             }
             else
             {
-                string idt = "SELECT AUTOGEN_ID_TRANS('" + idcabang + "') FROM DUAL";
+
+                string idt = "SELECT AUTOGEN_ID_TRANS('" + idcabang + "') FROM DUAL";                
+
                 OracleCommand cmd = new OracleCommand(idt, oc);
                 idtrans = cmd.ExecuteScalar().ToString();
                 if (textBox2.Text == "")
@@ -104,6 +128,7 @@ namespace master_proyek
                 }
                 if (adamember == true) {
                     string queryhtr = "INSERT INTO HTRANS VALUES('" + idtrans + "',TO_DATE(TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS'),'DD/MM/YYYY HH24:Mi:SS'),'" + total + "','" + comboBox3.SelectedValue.ToString() + "','" + member + "','" + idkasir + "')";
+
                     OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
                     cmdinsh.ExecuteNonQuery();
                     for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
@@ -142,6 +167,56 @@ namespace master_proyek
                 //Menunjukkan Nota Habis Mbayar
                 FormNota fn = new FormNota(idtrans, pembayaran);
                 fn.Show();
+
+                    try
+                    {
+                        OracleCommand cmdinsh = new OracleCommand(queryhtr, oc);
+                        cmdinsh.ExecuteNonQuery();
+                      
+
+                        for (int i = 0; i < bunifuCustomDataGrid1.Rows.Count; i++)
+                        {
+                            string namamenu = bunifuCustomDataGrid1[1, i].Value.ToString();
+                            string conidm = "SELECT ID_MENU FROM MENU WHERE NAMA_MENU='" + namamenu + "'";
+                            try
+                            {
+                                OracleCommand cmdcekid = new OracleCommand(conidm, oc);
+                                string idm = cmdcekid.ExecuteScalar().ToString();
+                                string querydtr = "INSERT INTO DTRANS VALUES('" + idtrans + "','" + idm + "','" + bunifuCustomDataGrid1[0, i].Value.ToString() + "','"
+                                    + bunifuCustomDataGrid1[2, i].Value.ToString() + "','" + bunifuCustomDataGrid1[3, i].Value.ToString() + "')";
+                                OracleCommand cmdinsd = new OracleCommand(querydtr, oc);
+                                cmdinsd.ExecuteNonQuery();                             
+                            }
+                            catch (Exception ex)
+                            {                                
+                                MessageBox.Show("Gagal Karena " + ex.Message);
+                            }
+                        }
+
+                        pembayaran = Convert.ToInt32(textBox1.Text);
+                        label6.Text = (pembayaran - total).ToString("#,##");
+
+                        subtotal = 0;
+                        label5.Text = subtotal.ToString("#,##");
+
+                        total = 0;
+                        label8.Text = total.ToString("#,##");
+                        ot.Commit();
+                        bunifuCustomDataGrid1.Rows.Clear();
+                        bunifuCustomDataGrid1.Refresh();
+                        MessageBox.Show("Berhasil Dibayar");
+
+                        //Menunjukkan Nota Habis Mbayar
+                        FormNota fn = new FormNota(idtrans, pembayaran);
+                        fn.Show();
+                    }
+                    catch (Exception ex)
+                    {
+                        ot.Rollback();
+                        MessageBox.Show("Gagal Karena " + ex.Message);
+                    }
+                }
+
             }
         }
 
