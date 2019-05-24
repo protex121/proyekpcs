@@ -17,7 +17,6 @@ namespace master_proyek
     {
         OracleConnection conn = new OracleConnection();
         string path = Application.StartupPath+"\\pp";
-
         int row;
 
         public formLihatKasir()
