@@ -240,3 +240,6 @@ D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\ob
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
 D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
