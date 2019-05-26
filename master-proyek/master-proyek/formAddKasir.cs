@@ -50,7 +50,7 @@ namespace master_proyek
         {
             string nama = bunifuMaterialTextbox2.Text;
             string pass = bunifuMaterialTextbox3.Text;
-            string tgl = bunifuDatepicker1.Value + "";
+            string tgl = bunifuDatepicker1.Value.ToString("dd/MM/yyyy HH:mm:ss");
             string no = bunifuMaterialTextbox5.Text;
             string cabang = comboBox1.SelectedValue + "";
 
@@ -58,14 +58,15 @@ namespace master_proyek
             OracleCommand cmd = new OracleCommand(id, conn);
             id = cmd.ExecuteScalar().ToString();
 
-            string query = "INSERT INTO PEGAWAI VALUES('" + id + "','" + nama.ToUpper() + "','" + pass + "',to_date('" + tgl + "','DD/MM/YYYY HH24:Mi:SS'),'" + no + "','K2','"+cabang+"')";
+            MessageBox.Show(tgl);
+            string query = "INSERT INTO PEGAWAI VALUES('" + id + "','" + nama.ToUpper() + "','" + pass + "',to_date('" + tgl + "','DD/MM/YYYY HH24:Mi:SS'),'" + no + "','K2','" + cabang + "')";
             cmd = new OracleCommand(query, conn);
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("Insert Berhasil!");
 
             bunifuFlatButton2_Click(sender,e);
-            string newPath = @"D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\bin\Debug\pp";
+            string newPath = Application.StartupPath+"\\pp";
             string destFile = Path.Combine(newPath, id + ".jpg");
             File.Copy(path, destFile, true);
 

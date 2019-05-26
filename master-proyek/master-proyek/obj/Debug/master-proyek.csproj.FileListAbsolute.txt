@@ -79,3 +79,210 @@ C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\FlashControlV71.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\bin\Debug\stdole.dll
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatKasir.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\bin\Debug\stdole.dll
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatKasir.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+F:\Kuliah\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\proyekpcs\master-proyek\master-proyek\bin\Debug\stdole.dll
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatKasir.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+E:\proyekpcs\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatKasir.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Shared.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\FlashControlV71.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\bin\Debug\stdole.dll
+D:\Materi Kuliah\Semester 4\PCS\proyek\New folder\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+D:\Materi Kuliah\Semester 4\PCS\proyek\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\master-proyek.exe.config
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\master-proyek.exe
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\master-proyek.pdb
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\FlashControlV71.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\bin\Debug\stdole.dll
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.csprojAssemblyReference.cache
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.Form1.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formaddCabang.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formAddKasir.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formAddMenu.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formadminfc.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formKasir.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.FormLaporan.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formlihatcabang.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatKasir.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formManageMenu.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.FormNota.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.FormTennant.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.Properties.Resources.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.GenerateResource.cache
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CoreCompileInputs.cache
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.csproj.CopyComplete
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.exe
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
+C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.FormPilihCabang.resources

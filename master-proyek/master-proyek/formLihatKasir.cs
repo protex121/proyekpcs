@@ -16,7 +16,7 @@ namespace master_proyek
     public partial class formLihatKasir : Form
     {
         OracleConnection conn = new OracleConnection();
-        string path = "D:\\Materi Kuliah\\Semester 4\\PCS\\proyek\\proyekpcs\\master-proyek\\master-proyek\\bin\\Debug\\pp";
+        string path = Application.StartupPath+"\\pp";
         int row;
 
         public formLihatKasir()

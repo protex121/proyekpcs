@@ -43,5 +43,7 @@ namespace master_proyek
             crystalReportViewer1.ReportSource = nk;
             crystalReportViewer1.Refresh();
         }
+
+
     }
 }

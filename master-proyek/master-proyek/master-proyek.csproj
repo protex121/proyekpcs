@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -92,6 +92,12 @@
     <Compile Include="formAddMenu.Designer.cs">
       <DependentUpon>formAddMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="formAddPromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddPromo.Designer.cs">
+      <DependentUpon>formAddPromo.cs</DependentUpon>
+    </Compile>
     <Compile Include="formadminfc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     </Compile>
     <Compile Include="formKasir.Designer.cs">
       <DependentUpon>formKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporan.Designer.cs">
+      <DependentUpon>FormLaporan.cs</DependentUpon>
     </Compile>
     <Compile Include="formlihatcabang.cs">
       <SubType>Form</SubType>
@@ -116,17 +128,35 @@
     <Compile Include="formLihatKasir.Designer.cs">
       <DependentUpon>formLihatKasir.cs</DependentUpon>
     </Compile>
+    <Compile Include="formLihatMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLihatMenu.Designer.cs">
+      <DependentUpon>formLihatMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="formManageMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formManageMenu.Designer.cs">
       <DependentUpon>formManageMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="formManagePromo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManagePromo.Designer.cs">
+      <DependentUpon>formManagePromo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNota.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNota.Designer.cs">
       <DependentUpon>FormNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPilihCabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihCabang.Designer.cs">
+      <DependentUpon>FormPilihCabang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTennant.cs">
       <SubType>Form</SubType>
@@ -164,11 +194,17 @@
     <EmbeddedResource Include="formAddMenu.resx">
       <DependentUpon>formAddMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formAddPromo.resx">
+      <DependentUpon>formAddPromo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formadminfc.resx">
       <DependentUpon>formadminfc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formKasir.resx">
       <DependentUpon>formKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporan.resx">
+      <DependentUpon>FormLaporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formlihatcabang.resx">
       <DependentUpon>formlihatcabang.cs</DependentUpon>
@@ -176,11 +212,20 @@
     <EmbeddedResource Include="formLihatKasir.resx">
       <DependentUpon>formLihatKasir.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formLihatMenu.resx">
+      <DependentUpon>formLihatMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formManageMenu.resx">
       <DependentUpon>formManageMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formManagePromo.resx">
+      <DependentUpon>formManagePromo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormNota.resx">
       <DependentUpon>FormNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihCabang.resx">
+      <DependentUpon>FormPilihCabang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>
