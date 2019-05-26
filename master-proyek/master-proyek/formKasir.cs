@@ -13,7 +13,7 @@ namespace master_proyek
 {
     public partial class formKasir : Form
     {
-
+        
         public formKasir()
         {
             InitializeComponent();
@@ -22,13 +22,12 @@ namespace master_proyek
         OracleConnection oc;
         OracleDataAdapter odan;
         DataTable dtn= new DataTable();
-        OracleCommandBuilder cmdn;
-        DataSet dset= new DataSet();
+        OracleCommandBuilder cmdn;       
         int subtotal = 0;
         int total = 0;
         int delcell;
-        string idcabang = "T01";
-        string idkasir = "PD001";
+        public string idcabang;
+        public string idkasir;
         string member;
 
         private void formKasir_Load(object sender, EventArgs e)
@@ -59,9 +58,11 @@ namespace master_proyek
             comboBox3.DataSource = dt;
             comboBox3.DisplayMember = "TITLE_PROMO";
             comboBox3.ValueMember = "ID_PROMO";
-
-            //lanjutan coding NAMA KASIR
-            String namakasir = "SELECT NAMA_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
+            
+            //MessageBox.Show(idcabang);
+            String namakasir = "SELECT NAMA_PEGAWAI,CABANG_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
+            OracleCommand loadnama = new OracleCommand(namakasir, oc);
+            label12.Text = "Hi, My Name is " + loadnama.ExecuteScalar().ToString();
 
         }
 
@@ -280,6 +281,14 @@ namespace master_proyek
             }
         }
 
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

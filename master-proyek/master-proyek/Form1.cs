@@ -14,6 +14,7 @@ namespace master_proyek
     public partial class Form1 : Form
     {
         int detik = 0;
+        string idkasir;
         OracleConnection conn = new OracleConnection();
         List<string> id_tennant = new List<string>();
         List<string> pass_tennant = new List<string>();
@@ -105,6 +106,7 @@ namespace master_proyek
                 {
                     kasir = true;
                     i = id_kasir.Count + 10;
+                    idkasir = username;
                 }
             }
 
@@ -120,6 +122,11 @@ namespace master_proyek
             else if(kasir == true)
             {
                 formKasir ft = new formKasir();
+                ft.idkasir = idkasir;
+                String cekcab = "SELECT CABANG_PEGAWAI FROM PEGAWAI WHERE ID_PEGAWAI='" + idkasir + "'";
+                OracleCommand cmd = new OracleCommand(cekcab,conn);
+                //MessageBox.Show(cmd.ExecuteScalar().ToString());
+                ft.idcabang = cmd.ExecuteScalar().ToString();
                 this.Hide();
                 ft.ShowDialog();
                 this.Close();
