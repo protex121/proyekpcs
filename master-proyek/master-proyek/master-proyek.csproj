@@ -110,6 +110,12 @@
     <Compile Include="formKasir.Designer.cs">
       <DependentUpon>formKasir.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaporan.Designer.cs">
+      <DependentUpon>FormLaporan.cs</DependentUpon>
+    </Compile>
     <Compile Include="formlihatcabang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,12 @@
     </Compile>
     <Compile Include="FormNota.Designer.cs">
       <DependentUpon>FormNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPilihCabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPilihCabang.Designer.cs">
+      <DependentUpon>FormPilihCabang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTennant.cs">
       <SubType>Form</SubType>
@@ -191,6 +203,9 @@
     <EmbeddedResource Include="formKasir.resx">
       <DependentUpon>formKasir.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLaporan.resx">
+      <DependentUpon>FormLaporan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formlihatcabang.resx">
       <DependentUpon>formlihatcabang.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNota.resx">
       <DependentUpon>FormNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPilihCabang.resx">
+      <DependentUpon>FormPilihCabang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTennant.resx">
       <DependentUpon>FormTennant.cs</DependentUpon>
