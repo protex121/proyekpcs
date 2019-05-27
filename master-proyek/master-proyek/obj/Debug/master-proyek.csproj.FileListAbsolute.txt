@@ -289,3 +289,8 @@ C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj
 C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.exe
 C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master-proyek.pdb
 C:\Users\Bobby\Documents\GitHub\proyekpcs-master\master-proyek\master-proyek\obj\Debug\master_proyek.FormPilihCabang.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formAddPromo.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormLaporan.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
+C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormPilihCabang.resources
