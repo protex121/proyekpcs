@@ -12,7 +12,6 @@ namespace master_proyek
 {
     public partial class formadminfc : Form
     {
-
         public formadminfc()
         {
             InitializeComponent();
@@ -135,8 +134,16 @@ namespace master_proyek
 
         }
 
-        
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FormPilihCabang fpc = new FormPilihCabang();
+            fpc.Show();
+        }
 
-
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormLaporan fl = new FormLaporan("gaji");
+            fl.Show();
+        }
     }
 }
