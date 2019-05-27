@@ -294,5 +294,15 @@ namespace master_proyek
         {
             Application.Exit();
         }
+        Form1 fl;
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            idkasir = "";
+            idcabang = "";
+            fl = new Form1();
+            this.Hide();
+            fl.ShowDialog();
+            this.Close();
+        }
     }
 }

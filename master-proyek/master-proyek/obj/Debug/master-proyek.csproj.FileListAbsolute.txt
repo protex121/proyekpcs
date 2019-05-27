@@ -294,3 +294,5 @@ C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formLihatMenu.resources
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.formManagePromo.resources
 C:\Users\Bobby\Documents\GitHub\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormPilihCabang.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormLaporan.resources
+C:\Users\Gilbert Kho\Desktop\proyekpcs\master-proyek\master-proyek\obj\Debug\master_proyek.FormPilihCabang.resources
